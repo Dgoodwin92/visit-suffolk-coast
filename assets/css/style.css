@@ -4,7 +4,7 @@
         Main text: 041414 - 
         slogan: F76B8A
 */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&display=swap');
 /* Body ---------------------------------------- */
 body {
     margin: 0;
@@ -24,11 +24,32 @@ body {
 }
 
 #navbar-logo {
-    height: 25%;
-    width: 25%;
+    height: 130px;
+    width: 130px;
 }
 
+.nav-link {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #041414;
+}
 
+.navbar-nav {
+    text-align: right;
+}
+
+nav a:hover {
+    color: #F76B8A;
+}
+
+.navbar-toggler {
+    padding-right: 5px;
+    margin-right: 10px;
+   }
+
+.navbar-toggler-icon {
+    color: #041414;
+}
 /* Hero-Image ---------------------------------- */
 .home-image {
     padding: 0;
