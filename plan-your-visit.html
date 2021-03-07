@@ -9,6 +9,8 @@
     <script src="https://kit.fontawesome.com/59091d9539.js" crossorigin="anonymous"></script>
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--Maps-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <!-- CSS Stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <!--Hover.css-->
@@ -17,8 +19,8 @@
 <body>
     <header>
         <div class="container-fluid">
-            <nav class="navbar fixed-top navbar-expand-lg">
-                <a class="navbar-brand" href="#">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
                     <img id="navbar-logo" src="assets/logo/suffolk-coast.png"  alt="Suffolk Coast Logo">
                 </a>
                     <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +29,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Plan Your Visit</a>
@@ -40,13 +42,50 @@
             </nav>
         </div>
     </header>
-    <section class="map-1">
-        <div class="map-2">
-
+    <section class="container-fluid map-1">
+        <div class="map-button">
+            <a class="map-link"><i class="fas fa-landmark"></i>Towns & Villages</a>
+            <a class="map-link"><i class="fas fa-bicycle"></i>Activities</a>
+            <a class="map-link"><i class="fas fa-umbrella-beach"></i>Beaches</a>
+            <a class="map-link"><i class="fas fa-bed"></i>Places To Stay</a>
+            <a class="map-link"><i class="fas fa-utensils"></i>Places To Eat</a>
+        </div>
+        <div id="map">
         </div>
     </section>
+    <section>
+        <div class="container-fluid">
+            <h2 id="place-interest">Places of Interest</h2>
+        <div class="card-group">
+            <div class="card">
+    <img src="assets/images/aldeburgh.jpg" class="card-img-top" alt="Coloured Houses at  image">
+    <div class="card-body">
+      <h5 class="card-title">Aldeburgh</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="assets/images/southwold.jpg" class="card-img-top" alt="Southwold Beach Huts image">
+    <div class="card-body">
+      <h5 class="card-title">Southwold</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="assets/images/orford.jpg" class="card-img-top" alt="Waterways at Orford image">
+    <div class="card-body">
+      <h5 class="card-title">Orford</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+</div>
+    </section>
     <!--Google Maps-->
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"async></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfAHnFblPIVEv_-NQB3UpaSzaXutIxrdw&callback=initMap&libraries=&v=weekly"async></script>
     <!-- Bootstrap & Popper -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

@@ -4,10 +4,11 @@
         Main text: 041414 - 
         slogan: F76B8A
 */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&family=Handlee&display=swap');
 /* Body ---------------------------------------- */
 body {
     margin: 0;
+    background-color: #f9f9f9;
 }
 
 /* NavBar -------------------------------------- */
@@ -15,6 +16,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: transparent;
+    z-index: 1;
 }
 
 .navbar-brand {
@@ -24,8 +26,8 @@ body {
 }
 
 #navbar-logo {
-    height: 130px;
-    width: 130px;
+    height: 40px;
+    width: 40px;
 }
 
 .nav-link {
@@ -62,12 +64,59 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-family: 'Dancing Script', sans-serif;
+    font-family: 'Handlee', sans-serif;
     font-size: 400%;
+    padding-right: 150px;
 }
 
 .hero .btn {
-    background-color: #F76B8A;
+    background-color: #f9f9f9;
     font-family: 'Lato', sans-serif;
+    
 }
 
+/* Plan your visit page ----------------------------------------- */
+#place-interest {
+    padding: 10px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Dancing Script', sans-serif;
+}
+
+/* Map--------------------------------------------------- */
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+.map-button {
+    text-align: center;
+    padding: 10px;
+}
+
+.map-link {
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #041414;
+}
+
+.map-link:hover {
+    color: #F76B8A;
+}
+
+.fas {
+    padding: 2px;
+}
+
+/* Cards within places of interest ---------------------------------- */
+.card-title{
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.card-text{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
