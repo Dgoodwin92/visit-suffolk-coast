@@ -46,16 +46,28 @@ nav a:hover {
     padding-right: 5px;
     margin-right: 10px;
    }
-
-.navbar-toggler-icon {
-    color: #041414;
-}
 /* Hero-Image ---------------------------------- */
-.home-image {
-    padding: 0;
+.hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('/assets/images/hero-image.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-#hero-image-1 {
-    width: 100%;
-    height: 100%;
+.hero h1 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 400%;
 }
+
+.hero .btn {
+    background-color: #F76B8A;
+    font-family: 'Lato', sans-serif;
+}
+
