@@ -4,7 +4,7 @@
         Main text: 041414 - 
         slogan: F76B8A
 */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 /* Body ---------------------------------------- */
 body {
     margin: 0;
@@ -20,14 +20,15 @@ body {
 }
 
 .navbar-brand {
-    padding-left: 10px;
-    padding-right: 0;
+    padding: 10px;
     margin-right: 0;
+
 }
 
-#navbar-logo {
-    height: 40px;
-    width: 40px;
+.logo-nav {
+    font-family: 'Dancing Script', sans-serif;
+    color: #041414;
+    font-size: 40px;
 }
 
 .nav-link {
@@ -41,7 +42,7 @@ body {
 }
 
 nav a:hover {
-    color: #F76B8A;
+    color: #53665c;
 }
 
 .navbar-toggler {
@@ -64,8 +65,8 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-family: 'Handlee', sans-serif;
-    font-size: 400%;
+    font-family: 'Cinzel', sans-serif;
+    font-size: 300%;
     padding-right: 150px;
 }
 
@@ -119,4 +120,38 @@ nav a:hover {
 .card-text{
     font-family: 'Lato', sans-serif;
     text-align: center;
+}
+
+/* Contact Us --------------------------------------- */
+
+.contact-us {
+   width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('/assets/images/contact-us-img.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.contact-title {
+    font-family: 'Handlee', sans-serif;
+}
+
+.contact-slogan{
+    font-family: 'Lato', sans-serif;
+}
+
+.form-floating {
+    height: 80px;
+}
+
+.form-control {
+    background-color: transparent;
+    border-color: #041414;
+    font-family: 'Lato', sans-serif;
 }
