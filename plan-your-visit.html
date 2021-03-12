@@ -40,10 +40,10 @@
     </header>
     <section class="container-fluid map-1">
         <div class="map-button">
-            <button type="button" class="btn town-button"><i class="fas fa-landmark"></i>Towns & Villages</button>
-            <button type="button" class="btn town-button"><i class="fas fa-umbrella-beach"></i>Beaches</button>
-            <button type="button" class="btn town-button"><i class="fas fa-bed"></i>Places To Stay</button>
-            <button type="button" class="btn town-button"><i class="fas fa-utensils"></i>Places To Eat</button>
+            <button type="button" class="btn town-button" id="search-button"><i class="fas fa-landmark"></i>Towns & Villages</button>
+            <button type="button" class="btn town-button id="search-button""><i class="fas fa-umbrella-beach"></i>Beaches</button>
+            <button type="button" class="btn town-button id="search-button""><i class="fas fa-bed"></i>Places To Stay</button>
+            <button type="button" class="btn town-button id="search-button""><i class="fas fa-utensils"></i>Places To Eat</button>
         </div>
         <div id="map-outer">
         <div id="map">
@@ -55,7 +55,7 @@
             <h2 id="place-interest">Places of Interest</h2>
         <div class="card-group text-center">
             <div class="card">
-    <img src="assets/images/aldeburgh.jpg" class="card-img-top" alt="Coloured Houses at  image">
+    <img src="assets/images/aldeburgh.jpg" class="card-img-top" alt="Coloured Houses at Aldeburgh image">
     <div class="card-body">
       <h5 class="card-title">Aldeburgh</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -85,7 +85,7 @@
 </div>
     </section>
     <!--Google Maps-->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfAHnFblPIVEv_-NQB3UpaSzaXutIxrdw&map_ids=50f5268b5225a2a4&callback=initMap&libraries=&v=weekly"async></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfAHnFblPIVEv_-NQB3UpaSzaXutIxrdw&libraries=places&map_ids=50f5268b5225a2a4&callback=initMap&libraries=&v=weekly"async></script>
     <!-- Bootstrap & Popper -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
