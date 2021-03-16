@@ -310,6 +310,7 @@ function initMap(selectedLocations) {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 52.1823, lng: 1.6130 },
     zoom: 10,
+    disableDefaultUI: true,
   });
 }
 if (selectedLocations) {
