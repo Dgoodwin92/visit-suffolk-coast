@@ -9,6 +9,7 @@
 body {
     margin: 0;
     background-color: #f9f9f9;
+    overflow-x: hidden;
 }
 
 /* NavBar -------------------------------------- */
@@ -17,6 +18,7 @@ body {
     margin: 0;
     background-color: transparent;
     z-index: 1;
+    overflow-x: hidden;
 }
 
 .navbar-brand {
@@ -52,7 +54,7 @@ nav a:hover {
 /* Hero-Image ---------------------------------- */
 .hero {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,13 +69,41 @@ nav a:hover {
 .hero h1 {
     font-family: 'Cinzel', sans-serif;
     font-size: 300%;
-    padding-right: 150px;
 }
 
-.hero .btn {
-    background-color: #f9f9f9;
+/* Explore info ------------------------------------------------ */
+.info-title {
+    padding: 10px;
+    text-align: center;
+}
+
+.info-intro {
+    padding: 10px;
     font-family: 'Lato', sans-serif;
-    
+    color: #041414;
+}
+
+
+.info-vid {
+    text-align: center;
+    font-family: 'Cinzel', sans-serif;
+}
+
+.season-vid{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.season-vid iframe{
+    position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Plan your visit page ----------------------------------------- */
@@ -98,11 +128,16 @@ nav a:hover {
     color: #041414;
 }
 
+/* page intro vid --------------------------------------- */
+
+
 /* Map--------------------------------------------------- */
 
 #map {
 	width: 100%;
-	height: 400px;
+    height: 500px;
+    margin-right: 10px;
+    padding-right: 20px;
 }
 
 .map-button {
@@ -126,6 +161,16 @@ nav a:hover {
 }
 
 /* Cards within places of interest ---------------------------------- */
+.place-interest {
+    text-align: center;
+    font-family: 'Cinzel', sans-serif;
+    color: #041414;
+}
+
+.card {
+    margin: 5px;
+}
+
 .card-title{
     font-family: 'Cinzel', sans-serif;
     font-size: 30px;
@@ -143,8 +188,31 @@ nav a:hover {
 
 /* Video ------------------------------------------- */
 .aldeburgh-vid {
-    padding: 10px;
+  position: relative;
+  width: 100%;
+padding-bottom: 56.25%; 
+  height: 0;
+  margin: 10px;
+  
+}
+.aldeburgh-vid iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  padding-right: 20px;
+}
+
+.map-jump {
     text-align: center;
+}
+
+#back-to-map {
+    text-align: center;
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
 }
 
 /* Contact Us --------------------------------------- */
@@ -189,17 +257,23 @@ nav a:hover {
 }
 
 /* ---------------------------------------------- footer */
-
-.footer {
-  position:fixed;
-  bottom:0;
-  left:0;
+footer {
   width:100%;
-  height: 50px;
-  background-color: #D0DAEE;
+  height: 82px;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
 }
 
-.footer-head{
+#contact-footer{
+   position: fixed;
+bottom: 0;
+  width:100%;
+  height: 82px;
+  background-color: #f9f9f97D ;
+  overflow-x: hidden; 
+}
+
+#website-links-left{
 padding-top: 5px;
 padding-left: 40px;
 color: #041414;
@@ -207,9 +281,37 @@ font-family: 'Cinzel', sans-serif;
 }
 
 .footer-nav {
+display: inline-block;
 text-decoration: none;
-font-size: 12px;
+font-size: 14px;
+font-family: 'Lato', sans-serif;
 color: #041414;
+padding-left: 20px;
+}
+
+#website-links-right{
+    padding-top: 5px;
+padding-right: 40px;
+color: #041414;
+font-family: 'Cinzel', sans-serif;
+}
+
+.social-title {
+    text-align: right;
+}
+
+.social-links {
+    text-align: right;
+}
+
+.social-item {
+    display: inline-block;
+}
+
+.social-logo {
+    color: #041414;
+    font-size: 20px;
+    padding-right: 20px;
 }
 
 .footer-text-left {

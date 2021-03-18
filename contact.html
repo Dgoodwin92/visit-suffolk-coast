@@ -13,8 +13,15 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <!-- CSS Stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <!--Hover.css-->
-    <link href="css/hover-min.css" rel="stylesheet">
+    <!--EmailJs-->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_W17x5dWyogKYf2x7sJkYQ");
+   })();
+</script>
 </head>
 <body>
     <header>
@@ -46,48 +53,48 @@
             <h4 class="contact-slogan">Get in touch for more information on the Suffolk Coast</h4>
     <form class="contact-us-form">
     <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Name" aria-label="Name" required>
+        <input type="text" name="fullname" class="form-control" id="userName" placeholder="Name" aria-label="Name" required>
     </div>
     <div class="mb-3">
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" required>
+        <input type="email" name="email" class="form-control" id="userEmail" aria-describedby="emailHelp" placeholder="Email Address" required>
     </div>
     <div class="form-floating">
-        <textarea class="form-control" placeholder="Leave a question here" id="floatingTextarea"></textarea>
-            <label for="floatingTextarea">Questions..</label>
+        <textarea class="form-control" placeholder="Leave a question here" id="message"></textarea>
+            <label for="message">Questions..</label>
     </div>
-        <button type="submit" class="btn town-button">Submit</button>
+        <button onclick="sendMail()" type="button" class="btn town-button">Submit</button>
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
     </form>
     </div>
 </section>
-<footer>
+    <footer id="contact-footer">
         <div class="row">
             <div class="col-6">
-        <h6 class="uppercase" id="website-links">Website Links</h6>
+        <h6 class="uppercase" id="website-links-left">Website Links</h6>
             <p>
-                <a class="nav-link footer-nav" href="index.html">Home</a>
-                <a class="nav-link footer-nav" href="plan-your-visit.html">Plan Your Visit</a>
-                <a class="nav-link footer-nav" href="contact.html">Contact Us</a>
+                <a class="footer-nav" href="index.html">Home</a>
+                <a class="footer-nav" href="plan-your-visit.html">Plan Your Visit</a>
+                <a class="footer-nav" href="contact.html">Contact Us</a>
             </p>
             </div>
-            <div class="col-6">
-        <h6 class="uppercase" id="website-links">Social</h6>
-            <ul class="list-inline social-links">
-                <li class="list-inline-item">
+            <div class="col-6 social-title">
+        <h6 class="uppercase" id="website-links-right">Social</h6>
+            <ul class="social-links">
+                <li class="social-item">
                     <a target="_blank" href="https://www.facebook.com/">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-facebook social-logo" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                     </a>
                 </li>
-                <li class="list-inline-item">
+                <li class="social-item">
                     <a target="_blank" href="https://www.instagram.com/">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-instagram social-logo" aria-hidden="true"></i>
                             <span class="sr-only">Instagram</span>
                     </a>
                 </li>
-                <li class="list-inline-item">
+                <li class="social-item">
                     <a target="_blank" href="https://www.youtube.com/">
-                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                        <i class="fa fa-youtube social-logo" aria-hidden="true"></i>
                             <span class="sr-only">YouTube</span>
                     </a>
                 </li>
@@ -95,4 +102,9 @@
             </div>
             </div>
             </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--Internal JS-->
+<script src="assets/js/contact.js"></script>
 </body>
