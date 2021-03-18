@@ -26,3 +26,15 @@ The Wireframes for this project were created on WireframePro. I spent a good amo
 ![Image of Home Page](assets/wireframe/Welcome.png)
 ![Plan Your Visit](assets/wireframe/Where_to_go.png)
 ![Contact Us](assets/wireframe/Contact_us.png)
+
+### Design
+The colours that I have chosen for this project are to help the user feel at ease and to not be to in your face. The colours have also been chosen to reflect the Suffolk Coast natural colours.
+I have been aiming to showcase some of the colours that the user may see and feel if they were to ever visit the Suffolk coast.
+
+The colours I used were: 
+* #f9f9f9 - Snow was used for the background
+* #041414 - Dark Green has been used for the text
+* #00A3A3 - Persian Green has been used for the buttons
+
+The main colour used for the background colours, navbar and footer is called Snow and this has been used to keep consistency and to also reflect how the Suffolk Coast sky looks like. I also choose this colour as it has given the site a subtle but classy colour scheme as well as allowing the text to be easily read.
+The navbar has a default colour set to Snow, but for the purpose of the images on the landing page and contact us page those navbars are transparent. This is so that the user can see the image within that page clearly.  
