@@ -15,5 +15,6 @@ function sendMail(){
     }, function(error) {
        alert('EMAIL FAILED TO SEND...', error);
     });
+    return false;
 }
 
