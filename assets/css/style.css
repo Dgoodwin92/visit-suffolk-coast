@@ -59,7 +59,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('/assets/images/hero-image.jpg');
+    background-image: url('assets/images/hero-image.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -224,7 +224,7 @@ padding-bottom: 56.25%;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('/assets/images/contact-us-img.jpg');
+    background-image: url('assets/images/contact-us-img.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
