@@ -3,13 +3,7 @@ Visit the Suffolk coast is a site which aims to give the user more information a
 This website hopes to entise new travelers into the idea of expoloring this beautiful part of the United Kingdom. We aim to give helpful information about the area, so that it can be explored properly.
 The languages which are used on this project are HTML5, CSS3 and JavaScript. Bootstrap has also been used alongside these languages to help the project has a clear structure and is also responsive depending on the screen size the user is using.
 
-
-
-### Wireframes
-The Wireframes for this project were created on WireframePro. I spent a good amount of time moving around the content to see what will work the best for the look and feel of the website. The images of my wireframes are below.
-![Image of Home Page](assets/wireframe/Welcome.png)
-![Plan Your Visit](assets/wireframe/Where_to_go.png)
-![Contact Us](assets/wireframe/Contact_us.png)
+![Image Of Site Being Responsive](assets/images/responsive-image.png)
 
 ### Design
 
@@ -127,6 +121,12 @@ The aim of this site is to be concise and helpful towards the user, easy to navi
   * By having an attractive website that is clean and easy to navigate with the use of a navbar. This will allow the user to click onto the page they need, also on the navbar is the website title which is also a link to the home page.
   * The contact form within the contact us page is simple and easy for the user to use without getting confused. There is clear parameters that the user needs to enter, on completion there is a modal to pop up saying that the request has been complete.
   * Within the footer there is links to the Home, Plan Your Visit and Contact Us page. There is also social media links for the user to use if they would like to see more from this website. 
+
+### Wireframes
+The Wireframes for this project were created on WireframePro. I spent a good amount of time moving around the content to see what will work the best for the look and feel of the website. The images of my wireframes are below.
+![Image of Home Page](assets/wireframe/Welcome.png)
+![Plan Your Visit](assets/wireframe/Where_to_go.png)
+![Contact Us](assets/wireframe/Contact_us.png)
 
 ### User Testing 
 Once my project was almost complete I sent it out to friends and family to test. 
